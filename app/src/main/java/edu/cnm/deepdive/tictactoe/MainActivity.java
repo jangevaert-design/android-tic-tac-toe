@@ -1,5 +1,6 @@
 package edu.cnm.deepdive.tictactoe;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -9,7 +10,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity implements OnClickListener {
+public class MainActivity<eb4034> extends AppCompatActivity implements OnClickListener {
 
   private Button[][] buttons = new Button[3][3];
 
@@ -22,7 +23,6 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
   private TextView textViewPlayer1;
   private TextView textViewPlayer2;
-
 
 
   @Override
@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
     if(player1Turn) {
       ((Button) v).setText("X");
+      ((Button) v).setBackgroundColor(Color.argb(0, 0, 4, 8));
     } else {
       ((Button) v).setText("O");
     }
@@ -145,6 +146,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     for (int i = 0; i < 3; i++) {
       for (int j = 0; j < 3; j++) {
         buttons[i][j].setText("");
+        buttons[i][j].setBackgroundColor(Color.argb(0, 4, 4, 17));
       }
 
     }
