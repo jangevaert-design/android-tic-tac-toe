@@ -60,7 +60,7 @@ public class MainActivity<eb4034> extends AppCompatActivity implements OnClickLi
 
     if(player1Turn) {
       ((Button) v).setText("X");
-      ((Button) v).setBackgroundColor(Color.argb(0, 0, 4, 8));
+      ((Button) v).setBackgroundColor(Color.argb(0, 76, 88, 47));
     } else {
       ((Button) v).setText("O");
     }
